@@ -26,6 +26,55 @@ namespace Raise_a_Henning
 
         }
 
+        public void DoAction(int which)
+        {
+            if (which == 1)
+            {
+                action1();
+            }
+            else if (which == 2)
+            {
+                action2();
+            }
+            else if (which == 3)
+            {
+                action3();
+            }
+            else if (which == 4)
+            {
+                action4();
+            }
+            else if (which == 5)
+            {
+                action5();
+            }
+        }
+
+        public void action1()
+        {
+
+        }
+
+        public void action2()
+        {
+
+        }
+
+        public void action3()
+        {
+
+        }
+
+        public void action4()
+        {
+
+        }
+
+        public void action5()
+        {
+
+        }
+
         public void ListActions()
         {
             Console.WriteLine("Du kan:\n1. Ge " + name + " ett snack\n2. Lära dig ett spel av " + name + "\n3. Köpa en figurine åt " + name + " från " + name + "s favoritanime" +

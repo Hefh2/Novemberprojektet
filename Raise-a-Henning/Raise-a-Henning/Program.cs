@@ -10,6 +10,11 @@ namespace Raise_a_Henning
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Vilken typ av husdjur vill du ha?\n1. Extrovert - Lätt\n2. Katt (Henning) - Mellan\n3. Introvert - Svår");
+
+
+
+
         }
     }
 }
