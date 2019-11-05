@@ -13,6 +13,7 @@ namespace Raise_a_Henning
         private int sallskapAndraAvtag;
         private int karlekAvtag;
         private int motionAvtag;
+        private string typ = "Introvert";
 
         public void Tick()
         {
@@ -23,6 +24,18 @@ namespace Raise_a_Henning
             motion = motion - motionAvtag;
             dollar = dollar + dollarOkning;
 
+        }
+
+        public void ListActions()
+        {
+            Console.WriteLine("Du kan:\n1. Ge " + name + " ett snack\n2. Lära dig ett spel av " + name + "\n3. Köpa en figurine åt " + name + " från " + name + "s favoritanime" +
+                "\n4. Tvinga " + name + " att gå till gymmet\n5. Hjälpa " + name + " att lägga upp en IT-tutorial på youtube");
+        }
+
+        public void PrintStats()
+        {
+            Console.WriteLine("Namn: " + name + "Typ: " + typ + "\n\nMat: " + mat + "\nSällskap: " + sallskap + "\nSällskap med andra djur: " + sallskapAndra + "\nKärlek: " + karlek
+                + "\nMotion: " + motion + "\n\nPengar: " + dollar);
         }
     }
 }

@@ -13,6 +13,37 @@ namespace Raise_a_Henning
         private int sallskapAndraAvtag;
         private int karlekAvtag;
         private int motionAvtag;
+        private string typ = "Extrovert";
+
+        public void DoAction(int which)
+        {
+            if (which == 1)
+            {
+                action1();
+            }
+            else if (which == 2)
+            {
+                action2();
+            }
+            else if (which == 3)
+            {
+                action3();
+            }
+            else if (which == 4)
+            {
+                action4();
+            }
+            else if (which == 5)
+            {
+                action5();
+            }
+            else if
+        }
+
+        public void action1()
+        {
+
+        }
 
         public void Tick()
         {
@@ -23,6 +54,18 @@ namespace Raise_a_Henning
             motion = motion - motionAvtag;
             dollar = dollar + dollarOkning;
 
+        }
+        
+        public void ListActions()
+        {
+            Console.WriteLine("Du kan:\n1. Mata " + name + "\n2. Ta en promenad med " + name + "\n3. Äta middag på stan med " + name + "\n4. Ordna en spel kväll åt " + name + " och " + name + "s kompisar" +
+                "\n5. Släppa ut " + name + " att vara med sina kompisar ett tag");
+        }
+
+        public void PrintStats()
+        {
+            Console.WriteLine("Namn: " + name + "Typ: " + typ + "\n\nMat: " + mat + "\nSällskap: " + sallskap + "\nSällskap med andra djur: " + sallskapAndra + "\nKärlek: " + karlek
+                + "\nMotion: " + motion + "\n\nPengar: " + dollar);
         }
     }
 }

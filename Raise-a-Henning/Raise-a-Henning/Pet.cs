@@ -20,31 +20,22 @@ namespace Raise_a_Henning
         static Random generator = new Random();
         public string name;
 
-        public void DoAction(int which)
+        public bool GetAlive()
         {
-            //Does the specified action, since the action are named action1, action2, action3 and so forth
-            //it will just use the method from the typ of pet it is concerning
+            return isAlive;
         }
 
-        public void Tick()
-        {
-
-        }
-
-        public void GetAlive()
-        {
-
-        }
-
-        public void ListActions()
-        {
-
-        }
+        public void DoAction()
+        {}
 
         public void PrintStats()
-        {
+        {}
 
-        }
+        public void Tick()
+        {}
 
+        public void ListActions()
+        {}
+        
     }
 }
