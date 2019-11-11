@@ -26,25 +26,25 @@ namespace Raise_a_Henning
 
         }
 
-        public void DoAction(int which)
+        public void DoAction(string which)
         {
-            if (which == 1)
+            if (which == "1")
             {
                 action1();
             }
-            else if (which == 2)
+            else if (which == "2")
             {
                 action2();
             }
-            else if (which == 3)
+            else if (which == "3")
             {
                 action3();
             }
-            else if (which == 4)
+            else if (which == "4")
             {
                 action4();
             }
-            else if (which == 5)
+            else if (which == "5")
             {
                 action5();
             }
@@ -83,8 +83,9 @@ namespace Raise_a_Henning
 
         public void PrintStats()
         {
+            Console.Clear();
             Console.WriteLine("Namn: " + name + "Typ: " + typ + "\n\nMat: " + mat + "\nSällskap: " + sallskap + "\nSällskap med andra djur: " + sallskapAndra + "\nKärlek: " + karlek
-                + "\nMotion: " + motion + "\n\nPengar: " + dollar);
+                + "\nMotion: " + motion + "\n\nPengar: " + dollar + "\n");
         }
     }
 }
