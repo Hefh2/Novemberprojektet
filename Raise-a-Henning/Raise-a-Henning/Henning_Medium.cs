@@ -9,21 +9,23 @@ namespace Raise_a_Henning
     class Henning_Medium : Pet
     {
         protected override string typ { get; set; } = "Katt (Henning)";
-        protected override string asciiArt { get; set; } = "";
-
-        private int matAvtag;
-        private int sallskapAvtag;
-        private int sallskapAndraAvtag;
-        private int karlekAvtag;
-        private int motionAvtag;
-
+        protected override string asciiArt { get; set; } = @"
+        /\_____/\
+       /  o   o  \
+      ( ==  ^  == )
+       )         (
+      (           )
+     ( (  )   (  ) )
+    (__(__)___(__)__)
+";
+        
         public override void Tick()
         {
-            mat = mat - matAvtag;
-            sallskap = sallskap - sallskapAvtag;
-            sallskapAndra = sallskapAndra - sallskapAndraAvtag;
-            karlek = karlek - karlekAvtag;
-            motion = motion - motionAvtag;
+            mat = mat - 5;
+            sallskap = sallskap - 10;
+            sallskapAndra = sallskapAndra - 10;
+            karlek = karlek - 20;
+            motion = motion - 5;
             dollar = dollar + dollarOkning;
 
         }

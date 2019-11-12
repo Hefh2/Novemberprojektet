@@ -24,11 +24,11 @@ namespace Raise_a_Henning
 
         public bool GetAlive()
         {
-            if (mat != 0 || sallskap != 0 || sallskapAndra != 0 || karlek != 0 || motion != 0)
+            if (mat < 1 || sallskap < 1 || sallskapAndra < 1 || karlek < 1 || motion < 1)
             {
-                return true;
+                return false;
             }
-            return false;
+            return true;
         }
 
         public void PrintStats()

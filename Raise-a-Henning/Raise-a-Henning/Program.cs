@@ -70,7 +70,7 @@ namespace Raise_a_Henning
 
             Console.Clear();
             Console.WriteLine("lmao ded");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }

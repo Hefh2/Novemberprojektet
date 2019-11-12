@@ -9,21 +9,22 @@ namespace Raise_a_Henning
     class Introvert_Hard : Pet
     {
         protected override string typ { get; set; } = "Introvert";
-        protected override string asciiArt { get; set; } = "";
-
-        private int matAvtag;
-        private int sallskapAvtag;
-        private int sallskapAndraAvtag;
-        private int karlekAvtag;
-        private int motionAvtag;
+        protected override string asciiArt { get; set; } = @"
+            _     _
+           (')-=-(')
+         __(   '   )__
+        / _/'-----'\_ \
+     ___\\ \\     // //___
+     >____)/_\---/_\(____<
+";
 
         public override void Tick()
         {
-            mat = mat - matAvtag;
-            sallskap = sallskap - sallskapAvtag;
-            sallskapAndra = sallskapAndra - sallskapAndraAvtag;
-            karlek = karlek - karlekAvtag;
-            motion = motion - motionAvtag;
+            mat = mat - 20;
+            sallskap = sallskap - 5;
+            sallskapAndra = sallskapAndra - 5;
+            karlek = karlek - 20;
+            motion = motion - 5;
             dollar = dollar + dollarOkning;
 
         }
