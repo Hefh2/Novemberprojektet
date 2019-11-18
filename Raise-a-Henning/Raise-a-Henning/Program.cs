@@ -25,7 +25,7 @@ namespace Raise_a_Henning
                     loop1 = false;
                 } else if (answer == "2")
                 {
-                    p = new Henning_Medium();
+                    p = new Katt_Medium();
                     loop1 = false;
                 } else if (answer == "3")
                 {

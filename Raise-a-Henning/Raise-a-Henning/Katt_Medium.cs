@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Raise_a_Henning
 {
-    class Henning_Medium : Pet
+    class Katt_Medium : Pet
     {
         protected override string typ { get; set; } = "Katt (Henning)";
         protected override string asciiArt { get; set; } = @"
