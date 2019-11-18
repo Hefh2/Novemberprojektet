@@ -26,8 +26,26 @@ namespace Raise_a_Henning
         {
             if (mat < 1 || sallskap < 1 || sallskapAndra < 1 || karlek < 1 || motion < 1)
             {
+                Console.Clear();
+                if (mat < 1)
+                {
+                    Console.WriteLine("\n" + name + " svälte ihjäl.");
+                } else if (sallskap < 1)
+                {
+                    Console.WriteLine("\n" + name + " dog av ensamhet.");
+                } else if (sallskapAndra < 1)
+                {
+                    Console.WriteLine("\n" + name + " dog av att du var för overprotective.");
+                } else if (karlek < 1)
+                {
+                    Console.WriteLine("\n" + name + " dog för att den kände sig oälskad.");
+                } else if (motion < 1)
+                {
+                    Console.WriteLine("\n" + name + " fick ingen träning och dog av flera typer av hjärtsjukdom.");
+                }
                 return false;
             }
+
             return true;
         }
 

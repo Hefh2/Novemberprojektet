@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Henning_Medium.cs" />
+    <Compile Include="Katt_Medium.cs" />
     <Compile Include="Extrovert_Easy.cs" />
     <Compile Include="Introvert_Hard.cs" />
     <Compile Include="Pet.cs" />

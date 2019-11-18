@@ -67,9 +67,7 @@ namespace Raise_a_Henning
             {
                 p.TakeTurn();
             }
-
-            Console.Clear();
-            Console.WriteLine("lmao ded");
+            
             Console.ReadKey();
         }
     }

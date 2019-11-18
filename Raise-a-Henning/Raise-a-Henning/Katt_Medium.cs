@@ -78,27 +78,90 @@ namespace Raise_a_Henning
 
         public void action1()
         {
+            Console.WriteLine("Du matar " + name + ".");
+            mat += 30;
+            //Mata
 
+            if (mat > 100)
+            {
+                mat = 100;
+            }
         }
 
         public void action2()
         {
+            Console.WriteLine("Du matar " + name + " mycket.");
+            mat += 60;
+            karlek += 30;
+            motion -= 10;
+            dollar -= 2;
+            //Mata mycket
 
+            if (mat > 100)
+            {
+                mat = 100;
+            }
+            if (karlek > 100)
+            {
+                karlek = 100;
+            }
         }
 
         public void action3()
         {
+            Console.WriteLine("Du leker med " + name + ".");
+            sallskap += 30;
+            karlek += 30;
+            motion += 40;
+            //Lek
 
+            if (motion > 100)
+            {
+                motion = 100;
+            }
+            if (sallskap > 100)
+            {
+                sallskap = 100;
+            }
+            if (karlek > 100)
+            {
+                karlek = 100;
+            }
         }
 
         public void action4()
         {
+            Console.WriteLine("Du kollar på TV tillsammans med " + name + ".");
+            karlek += 50;
+            sallskap += 30;
+            motion -= 20;
+            //TV
 
+            if (karlek > 100)
+            {
+                karlek = 100;
+            }
+            if (sallskap > 100)
+            {
+                sallskap = 100;
+            }
         }
 
         public void action5()
         {
+            Console.WriteLine("Du släpper ut " + name + " över natten.");
+            motion += 20;
+            sallskapAndra += 40;
+            //Släpp ut
 
+            if (motion > 100)
+            {
+                motion = 100;
+            }
+            if (sallskapAndra > 100)
+            {
+                sallskapAndra = 100;
+            }
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Raise_a_Henning
             sallskap = sallskap - 5;
             sallskapAndra = sallskapAndra - 5;
             karlek = karlek - 20;
-            motion = motion - 5;
+            motion = motion - 20;
             dollar = dollar + dollarOkning;
 
         }
@@ -77,27 +77,67 @@ namespace Raise_a_Henning
 
         public void action1()
         {
+            Console.WriteLine("Du ger " + name + " ett gamersnack.");
+            mat += 60;
+            motion -= 10;
+            dollar -= 2;
+            //Gamer snacks
 
+            if (mat > 100)
+            {
+                mat = 100;
+            }
         }
 
         public void action2()
         {
+            Console.WriteLine("Du låter " + name + " lära dig ett spel.");
+            sallskap += 20;
+            //Spel
 
+            if (sallskap > 100)
+            {
+                sallskap = 100;
+            }
         }
 
         public void action3()
         {
+            Console.WriteLine("Du köper en anime figurine åt " + name + " som en present.");
+            karlek += 100;
+            dollar -= 4;
+            //Figurine
 
+            if (karlek > 100)
+            {
+                karlek = 100;
+            }
         }
 
         public void action4()
         {
+            Console.WriteLine("Du tvingar " + name + " att gå till gymmet.");
+            motion += 50;
+            karlek -= 20;
+            //Gymma
 
+            if (motion > 100)
+            {
+                motion = 100;
+            }
         }
 
         public void action5()
         {
+            Console.WriteLine("Du hjälper " + name + " att lägga upp en IT-tutorial på YuoTubo.");
+            sallskap += 20;
+            dollar += 1;
+            //IT-tutorial
 
+            if (sallskap > 100)
+            {
+                sallskap = 100;
+            }
         }
     }
 }
