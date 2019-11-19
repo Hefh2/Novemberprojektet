@@ -31,7 +31,7 @@ namespace Raise_a_Henning
 
         public override void ListActions()
         {
-            Console.WriteLine("Du kan:\n1. Ge " + name + " ett snack\n2. Lära dig ett spel av " + name + "\n3. Köpa en figurine åt " + name + " från " + name + "s favoritanime" +
+            Console.WriteLine("Du kan:\n1. Ge " + name + " ett gamersnack\n2. Lära dig ett spel av " + name + "\n3. Köpa en figurine åt " + name + " från " + name + "s favoritanime" +
                 "\n4. Tvinga " + name + " att gå till gymmet\n5. Hjälpa " + name + " att lägga upp en IT-tutorial på youtube\n");
         }
 
@@ -92,12 +92,17 @@ namespace Raise_a_Henning
         public void action2()
         {
             Console.WriteLine("Du låter " + name + " lära dig ett spel.");
-            sallskap += 20;
+            sallskap += 30;
+            karlek += 10;
             //Spel
 
             if (sallskap > 100)
             {
                 sallskap = 100;
+            }
+            if (karlek > 100)
+            {
+                karlek = 100;
             }
         }
 

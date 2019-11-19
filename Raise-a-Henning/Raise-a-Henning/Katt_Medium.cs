@@ -80,6 +80,7 @@ namespace Raise_a_Henning
         {
             Console.WriteLine("Du matar " + name + ".");
             mat += 30;
+            dollar -= 1;
             //Mata
 
             if (mat > 100)

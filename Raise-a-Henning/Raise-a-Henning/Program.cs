@@ -51,9 +51,11 @@ namespace Raise_a_Henning
                 if (answer.Length > 16)
                 {
                     Console.WriteLine("Namnet är för långt, testa något som är 16 bokstäver eller kortare.\n");
+                    Console.ReadKey();
                 } else if (answer.Length < 1)
                 {
                     Console.WriteLine("Du måste ge ditt husdjur ett namn!\n");
+                    Console.ReadKey();
                 } else
                 {
                     p.name = answer;
@@ -67,6 +69,7 @@ namespace Raise_a_Henning
             {
                 p.TakeTurn();
             }
+            //Kör en loop med TakeTurn() som slutar när djuret dör.
             
             Console.ReadKey();
         }

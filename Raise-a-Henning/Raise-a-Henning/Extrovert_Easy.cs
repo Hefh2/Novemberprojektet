@@ -81,6 +81,7 @@ namespace Raise_a_Henning
         {
             Console.WriteLine("Du matar " + name + ".");
             mat += 30;
+            dollar -= 1;
             //Mata
 
             if (mat > 100)
@@ -92,7 +93,7 @@ namespace Raise_a_Henning
         public void action2()
         {
             Console.WriteLine("Du tar med " + name + " på en promand.");
-            motion += 30;
+            motion += 50;
             sallskap += 30;
             //Promenad
 
