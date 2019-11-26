@@ -8,6 +8,9 @@ namespace Raise_a_Henning
 {
     class Extrovert_Easy : Pet
     {
+        //Btw alla svårighetsgrader är typ samma kod så jag kommenterar bara den här.
+
+        //Typ och ascii som kan hämtas av pet
         protected override string typ { get; set; } = "Extrovert";
         protected override string asciiArt { get; set; } = @"
                    _ |\_
@@ -19,6 +22,7 @@ namespace Raise_a_Henning
      `-----'`-----` `--`
 ";
         
+        //Minskar statsen för varje action spelaren tar.
         public override void Tick()
         {
             mat = mat - 10;
@@ -30,12 +34,14 @@ namespace Raise_a_Henning
 
         }
 
+        //Lista upp vilka actions spelar kan ta beroende på vilket pet.
         public override void ListActions()
         {
             Console.WriteLine("Du kan:\n1. Mata " + name + "\n2. Ta en promenad med " + name + "\n3. Äta middag på stan med " + name + "\n4. Ordna en spel kväll åt " + name + " och " + name + "s kompisar" +
                 "\n5. Släppa ut " + name + " att vara med sina kompisar ett tag\n ");
         }
 
+        //Kombinerar PrintStats, ListActions, (action1 - 5), och tick i en metod som jag kallar TakeTurn. Den Printar stats och actions man kan välja mellan, ser vad spelaren svarar. Tar den actionen och drar ner alla stats ett steg.
         public override void TakeTurn()
         {
 
@@ -76,6 +82,9 @@ namespace Raise_a_Henning
 
             Tick();
         }
+
+        //Drar ner och upp alla stats beroende på vad actionen ska representera - Mata höjer mat.
+        //Stats kan inte gå över 100.
 
         public void action1()
         {

@@ -8,7 +8,7 @@ namespace Raise_a_Henning
 {
     class Katt_Medium : Pet
     {
-        protected override string typ { get; set; } = "Katt (Henning)";
+        protected override string typ { get; set; } = "Katt (Katt)";
         protected override string asciiArt { get; set; } = @"
         /\_____/\
        /  o   o  \

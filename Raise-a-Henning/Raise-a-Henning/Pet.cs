@@ -8,9 +8,11 @@ namespace Raise_a_Henning
 {
     abstract class Pet
     {
+        //Definierar asciiart från subclass och typ från subclass
         protected abstract string typ { get; set; }
         protected abstract string asciiArt { get; set; }
         
+        //Definierar basestats för alla djur
         protected int mat = 100;
         protected int sallskap = 100;
         protected int sallskapAndra = 100;
@@ -22,6 +24,7 @@ namespace Raise_a_Henning
         static Random generator = new Random();
         public string name;
 
+        //Kollar om något av stats gått under 1 i vilket fall djuret dör.
         public bool GetAlive()
         {
             if (mat < 1 || sallskap < 1 || sallskapAndra < 1 || karlek < 1 || motion < 1)
@@ -49,6 +52,7 @@ namespace Raise_a_Henning
             return true;
         }
 
+        //Clearar text, skriver ut ascii art, skriver ut stats.
         public void PrintStats()
         {
             Console.Clear();
@@ -57,6 +61,7 @@ namespace Raise_a_Henning
                 + "\nMotion: " + motion + "\n\nPengar: " + dollar + "\n");
         }
 
+        //Hämtar metoder TakeTurn, Tick och ListActions från subklasser.
         public abstract void TakeTurn();
         
         public abstract void Tick();

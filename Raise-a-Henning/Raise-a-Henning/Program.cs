@@ -15,9 +15,11 @@ namespace Raise_a_Henning
             bool loop1 = true;
             while (loop1 == true)
             {
+                //Clearar allt och skriver ut vilka val du har på husdjur.
                 Console.Clear();
                 Console.WriteLine("Vilken typ av husdjur vill du ha?\n1. Extrovert - Lätt\n2. Katt - Mellan\n3. Introvert - Svår\n");
                 
+                //Definierar vilket husdjuret är beroende på vad du valde och stänger av loopen
                 string answer = Console.ReadLine();
                 if (answer == "1")
                 {
@@ -33,16 +35,17 @@ namespace Raise_a_Henning
                     loop1 = false;
                 } else
                 {
+                    //Säger ajabaja för du gav inte ett valid svar - fortsätter loopen
                     Console.WriteLine("Snälla ge ett svar, 1 - 3. Klicka mellanslag för att fortsätta.\n");
                     Console.ReadKey();
                 }
-                //Frågar spelaren vilken typ av husdjur den vill ha och beroende på det ändrar den p till att vara den typen av husdjur.
-                //Om man inte ger ett svar 1 - 3 så säger den åt en det och startar om loopen.
             }
 
+            //Samma sak som med loop1 fast med loop2
             bool loop2 = true;
             while (loop2 == true)
             {
+                //Clearar och ber om ett namn för ditt husdjur - är det för långt eller inget alls så fortsätter loopen
                 Console.Clear();
                 Console.WriteLine("Vad vill du ge ditt nya husdjur för namn?\n");
 
@@ -63,7 +66,6 @@ namespace Raise_a_Henning
                     loop2 = false;
                 }
             }
-            //Gör en loop som fortsätter tills husdjuret har fått ett namn mellan 1 och 16 bokstäver.
 
             while (p.GetAlive() == true)
             {
